@@ -87,13 +87,13 @@ async function getMyInvitations(contract) {
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms))
 
 async function main() {
-  let playToEarnXContract
+
 
   try {
-    const contractAddresses = fs.readFileSync('./contracts/contractAddress.json', 'utf8')
-    const { playToEarnXContract: playToEarnXAddress } = JSON.parse(contractAddresses)
 
-    playToEarnXContract = await ethers.getContractAt('PlayToEarnX', playToEarnXAddress)
+    const playToEarnXAddress = "0x60Cd6C31B94d0fAdc83A856A6a50D4F3023fa1fE"
+
+    let playToEarnXContract = await ethers.getContractAt('PlayToEarnX', playToEarnXAddress)
 
     // Process #1
     await Promise.all(

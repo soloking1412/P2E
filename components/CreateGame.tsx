@@ -22,6 +22,9 @@ const CreateGame: React.FC = () => {
     stake: '',
   })
 
+  console.log(game);
+
+
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target
     setGame((prevState) => ({

@@ -1,11 +1,9 @@
-# Play2EarnX Project Documentation
+# Play2Earn Project Documentation
 
-<!-- Read the full tutorial here: **[>> How to build a Decentralized Game Platform with Next.js, TypeScript, Tailwind CSS, and Solidity](https://daltonic.github.io)** -->
-
-![Play2EarnX](./screenshots/0.png)
+![Play2Earn](./screenshots/0.png)
 The project revolves around `Play2EarnX.sol`, a Solidity-written Ethereum smart contract. It leverages the OpenZeppelin library to ensure secure and standardized development of the contract.
 
-![Play2EarnX](./screenshots/1.png)
+![Play2Earn](./screenshots/1.png)
 
 The core of the contract is defined by four primary structures: `GameStruct`, `PlayerStruct`, `InvitationStruct`, and `ScoreStruct`, representing a game, a player, an invitation, and a score, respectively.
 
@@ -19,28 +17,9 @@ The core of the contract is defined by four primary structures: `GameStruct`, `P
 - `payout`: Distributes payouts to the winners of a game.
 - `saveScore`: Records a player's score in a game.
 
-## Running the Application
 
-Supply the following keys in your `.env` variable:
-
-```sh
-NEXT_PUBLIC_RPC_URL=http://127.0.0.1:8545
-NEXT_PUBLIC_ALCHEMY_ID=<YOUR_ALCHEMY_PROJECT_ID>
-NEXT_PUBLIC_PROJECT_ID=<WALLET_CONNECT_PROJECT_ID>
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=somereallysecretsecret
-```
-
-`YOUR_ALCHEMY_PROJECT_ID`: [Get Key Here](https://dashboard.alchemy.com/)
-`WALLET_CONNECT_PROJECT_ID`: [Get Key Here](https://cloud.walletconnect.com/sign-in)
-
-Follow these steps to run the application:
-
-1. Install the package modules by running the command: `yarn install`
-2. Start the Hardhat server: `yarn blockchain`
-3. Run the contract deployment script: `yarn deploy`
-4. Run the contract seeding script: `yarn seed`
-5. Spin up the Next.js development server: `yarn dev`
+Run the contract seeding script: `yarn seed`
+Spin up the Next.js development server: `yarn dev`
 
 Now, your application should be up and running.
 
