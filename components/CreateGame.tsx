@@ -121,7 +121,7 @@ const CreateGame: React.FC = () => {
               </div>
 
               <div className="w-full">
-                <label className="text-[12px]">Stake Amount</label>
+                <label className="text-[12px]">Stake Amount (ETH)</label>
                 <div className="py-2 w-full border border-blue-900 rounded-full flex items-center px-4">
                   <input
                     placeholder="E.g 2"
